@@ -1,4 +1,4 @@
-package config;
+package com.dd.config;
 
 
 import org.springframework.context.annotation.Bean;
@@ -22,8 +22,6 @@ public class SwaggerConfig {
                 .apis(RequestHandlerSelectors.any())
                 .paths(PathSelectors.any()).build();
     }
-
-
 
     private ApiInfo webApiInfo(){
 

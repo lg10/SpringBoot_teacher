@@ -1,4 +1,4 @@
-package utils;
+package com.dd.utils;
 
 import lombok.Data;
 
@@ -11,6 +11,8 @@ public class R {
     private Integer code;
     private String message;
     private Map<String,Object> data=new HashMap<String ,Object>();
+
+
     //把构造方法私有
     private R(){}
 
@@ -54,5 +56,9 @@ public class R {
         this.setData(map);
         return this;
     }
+
+
+
+
 
 }

@@ -1,7 +1,7 @@
 package com.dd.edu.controller;
 
 
-import utils.R;
+import com.dd.utils.R;
 import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin//解决跨域访问
@@ -15,7 +15,7 @@ public class EduLoginTeacher {
     }
     @GetMapping("info")
     private R getInfo(){
-        return R.ok().data("roles","[admin]").data("name","xiankang").data("avatar","https://www.enterdesk.com/bizhi/40278.html");
+        return R.ok().data("roles","[admin]").data("name","xiankang").data("avatar","https://xiankanglg10.oss-cn-beijing.aliyuncs.com/1b3a3ded2fe4ab5890a916f2e9c0df9d.jpg");
 
     }
 }

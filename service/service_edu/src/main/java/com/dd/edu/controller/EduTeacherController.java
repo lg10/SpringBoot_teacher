@@ -2,18 +2,17 @@ package com.dd.edu.controller;
 
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.injector.methods.DeleteById;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 
+import com.dd.config.CustomException.CustomException;
 import com.dd.edu.entity.EduTeacher;
 import com.dd.edu.entity.vo.Queryteacher;
 import com.dd.edu.service.EduTeacherService;
-import config.CustomException.CustomException;
-import utils.R;
+
+import com.dd.utils.R;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
-import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
@@ -41,11 +40,11 @@ public class EduTeacherController {
     @ApiOperation(value = "讲师查询")
     @GetMapping("findAll")
     public  R findAllTeacher(){
-        try {
-            int a=10/0;
-        }catch (Exception e){
-            throw new CustomException(20001,"自定义异常。。。。");
-        }
+//        try {
+//            int a=10/0;
+//        }catch (Exception e){
+//            throw new CustomException(20001,"自定义异常。。。。");
+//        }
 
         List<EduTeacher> list=eduTeacherService.list(null);
         return R.ok().data("items",list);

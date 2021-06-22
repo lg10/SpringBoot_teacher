@@ -1,4 +1,4 @@
-package config.CustomException;
+package com.dd.config.CustomException;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

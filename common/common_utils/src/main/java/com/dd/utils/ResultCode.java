@@ -1,4 +1,4 @@
-package utils;
+package com.dd.utils;
 
 public interface ResultCode {
     public static Integer SUCCESS=20000;//成功

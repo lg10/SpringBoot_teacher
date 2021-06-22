@@ -1,12 +1,13 @@
-package config.exceptionhandler;
+package com.dd.config.exceptionhandler;
 
 
 
-import config.CustomException.CustomException;
+
+import com.dd.config.CustomException.CustomException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
-import utils.R;
+import com.dd.utils.R;
 
 
 @ControllerAdvice//
